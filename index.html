@@ -1,64 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <body>
-    <header .bg-light>
-        <div>
-
-          <div class="d-flex">
-          <i class="fa-brands fa-instagram"></i>
-          <h6>Instagram</h6>
-        </div>
-
-            <button type="button" class="btn btn-success">Create a new post </button>
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fas fa-cog"></i>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex gap-1 align-items-center" href="#">
+        <i class="fa-brands fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end d-flex" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-end d-flex">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create new post
               </button>
-        
-            </header>
 
-            <!-- Navigation Icons -->
-              <i class="fa-solid fa-table-cells"></i>
-              <i class="fa-solid fa-square"></i>
-
-              <!-- Photo Grid -->
-              <div>
-                <div class="container">
-                  <div class="row"> 
-                    <div class="col-4"><img src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2019_25/2901646/190618-dominican-republic-tourism-2012-ac-907p.jpg" alt=""></div>
-                      <div class="col-4"><img src="https://images.aeonmedia.co/images/acd6897d-9849-4188-92c6-79dabcbcd518/essay-final-gettyimages-685469924.jpg?width=3840&quality=75&format=auto" alt="" ></div>
-                      <div class="col-4"></div>
+              <!-- Modal -->
+              
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel "
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content ">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Create new post</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0 ">
+                      
+                    </div>
+                    <div class="mb-3 .modal-fullscreen-lg-down">
+                      <label for=" x-1 exampleFormControlTextarea1" class="form-label"><strong>Caption:</strong></label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Add the caption of your post here</textarea>
+                    </div>
+                    <!-- Camera & navigation icons (modal) -->
+                    <div class="d-flex p-1 gap-2 ">
+                      <button type="button " class="btn btn-outline-dark"><i class="fa-solid fa-camera  " ></i></button>
+                      
+                      <button type="button " class="btn btn-outline-dark">  <i class="fa-solid fa-location-dot "></i></button>
+                    </Div>
+                    <!-- modal footer buttons -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn btn-success">Publish</button>
+                    </div>
                   </div>
-
-                  <div class="row"> 
-                    <div class="col-4"></div>
-                      <div class="col-4"></div>
-                      <div class="col-4"></div>
-                  </div>
-
-                    <div class="row row-cols-2 row-cols-lg-3">
-                      <div class="col"><img src="https://www.costsavertour.com/media/nylpwiyy/highlights-france-guided-tour-1.jpg" alt=""></div>
-                      <div class="col"><img src="https://www.brookings.edu/wp-content/uploads/2021/11/2021-11-02T201727Z_1781731426_MT1USATODAY17079839_RTRMADP_3_KINDERGARDEN-STUDENTS-WORK-IN-CLASSROOMS-AT-ROSS-ELEMENTARY.jpg?quality=75" alt=""></div>
-                      <div class="col"><img src="https://wp.technologyreview.com/wp-content/uploads/2019/10/ap091219119483-10.jpg"></div>
-                      <div class="col"><img src="https://media.wired.com/photos/5acfe89489dd2039fecb0e1c/master/w_1600%2Cc_limit/08_PeterAndrews.jpg" alt=""></div>
-                      <div class="col"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvPQpJQF2yI8ZJiB2uPkbjE-H28PQX5zTnKq900usPQ&s" alt=""></div>
-                      <div class="col"><img src="https://a.cdn-hotels.com/gdcs/production2/d723/da64fdee-5e39-4caa-bfed-0fd433777f62.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt=""></div>
-                      <div class="col"><img src="https://cdn.aarp.net/content/aarpe/en/home/travel/vacation-ideas/family/info-2021/hawaiian-destinations-to-visit/_jcr_content/root/container_main/container_body_main/container_travel_main_body/container_travel_body/container_body2/container_body_cf/body_two_cf_one/par14/articlecontentfragme/cfimage.coreimg.50.932.jpeg/content/dam/aarp/travel/Domestic/2021/12/1140-the-big-island.jpg" alt=""></div>
+                </div>
               </div>
+            </a>
+          </li>
+          <li class="nav-item">
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fas fa-cog"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div>
 
 
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs d-flex justify-content-center " id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+          role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+          role="tab" aria-controls="profile" aria-selected="false"> <i class="fa-solid fa-square"></i></button>
+      </li>
+    </ul>
 
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <!-- Grid Layout -->
+        <div class="container pt-4">
+          <div class="row gap-2 pb-2">
+            <img class="col p-0" src="https://placehold.co/100x100" alt="">
+            <img class="col p-0" src="https://placehold.co/100x100" alt="">
+            <img class="col p-0" src="https://placehold.co/100x100" alt="">
+          </div>
+
+          <div class="row gap-2 pb-2">
+            <img class="col p-0" src="https://placehold.co/100x100" alt="">
+            <img class="col p-0" src="https://placehold.co/100x100" alt="">
+            <img class="col p-0" src="https://placehold.co/100x100" alt="">
+          </div>
+
+          <div class="row gap-2 pb-2">
+            <img class="col p-0" src="https://placehold.co/100x100" alt="">
+            <img class="col p-0" src="https://placehold.co/100x100" alt="">
+            <img class="col p-0" src="https://placehold.co/100x100" alt="">
+          </div>
         </div>
-    
-        
-    
 
+      </div>
+
+      <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <!-- Single Colum Layout -->
+        <div class="container col-6 justify-content-center d-flex flex-column gap-3 pt-4">
+          <!-- card 1 -->
+          <div class="card mx-auto" style="width: 26rem;">
+            <div class="card-header">
+              <div class="d-flex justify-content-between p-2">
+                <h5 class="card-title">My Title</h5>
+                <span>01/02/24</span>
+              </div>
+              <img src="https://placehold.co/100x100" class="card-img-top" alt="">
+              <div class="card-body">
+                <p><strong>999 Likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card mx-auto" style="width: 26rem;">
+            <div class="card-header">
+              <div class="d-flex justify-content-between p-2">
+                <h5 class="card-title">My Title</h5>
+                <span>01/02/24</span>
+              </div>
+              <img src="https://placehold.co/100x100" class="card-img-top" alt="">
+              <div class="card-body">
+                <p><strong>999 Likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card mx-auto" style="width: 26rem;">
+            <div class="card-header">
+              <div class="d-flex justify-content-between p-2">
+                <h5 class="card-title">My Title</h5>
+                <span>01/02/24</span>
+              </div>
+              <img src="https://placehold.co/100x100" class="card-img-top" alt="">
+              <div class="card-body">
+                <p><strong>999 Likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
